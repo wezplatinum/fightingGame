@@ -115,6 +115,7 @@ function animate() {
     // player movement
     if (keys.a.pressed && player.lastKey === 'a') {
         player.velocity.x = -8
+        player.image = player.sprites.run.image
     } else if (keys.d.pressed && player.lastKey === 'd') {
         player.velocity.x = 8
     }
